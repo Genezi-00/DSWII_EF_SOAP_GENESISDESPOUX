@@ -23,8 +23,8 @@ public class Alumno {
     @Column(nullable = false, unique = true, length = 10)
     private String dni;
 
-    @Column(name = "fecha_nacimiento")
-    private LocalDate fechaNacimiento;
+    @Column(name = "fechanacimiento")
+    private LocalDate fechanacimiento;
 
     @Column(length = 100)
     private String email;
