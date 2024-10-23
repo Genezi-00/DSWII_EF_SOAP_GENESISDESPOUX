@@ -1,0 +1,79 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/object"
+           targetNamespace="http://www.cibertec.edu.pe/ws/object"
+           elementFormDefault="qualified">
+
+    <!--Modelo Docente-->
+    <xs:complexType name="docentews">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="nombres" type="xs:string"/>
+            <xs:element name="apellidos" type="xs:string"/>
+            <xs:element name="dni" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--POST Docente-->
+    <xs:element name="postDocenteRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="docente" type="tns:docentews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postDocenteResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="docente" type="tns:docentews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--PUT Docente-->
+    <xs:element name="putDocenteRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="docente" type="tns:docentews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="putDocenteResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="docente" type="tns:docentews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Docentes busqueda general-->
+    <xs:element name="getDocentesRequest">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getDocentesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="docentes" type="tns:docentews" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Docente busqueda por ID-->
+    <xs:element name="getDocenteRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getDocenteResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="docente" type="tns:docentews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

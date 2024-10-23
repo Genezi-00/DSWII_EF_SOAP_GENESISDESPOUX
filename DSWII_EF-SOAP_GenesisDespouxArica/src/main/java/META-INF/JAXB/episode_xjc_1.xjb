@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 02:03:31 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/object">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.object"/>
+    </schemaBindings>
+    <bindings scd="tns:postCursoRequest">
+      <class ref="pe.edu.cibertec.ws.object.PostCursoRequest"/>
+    </bindings>
+    <bindings scd="~tns:cursows">
+      <class ref="pe.edu.cibertec.ws.object.Cursows"/>
+    </bindings>
+    <bindings scd="tns:postCursoResponse">
+      <class ref="pe.edu.cibertec.ws.object.PostCursoResponse"/>
+    </bindings>
+    <bindings scd="tns:putCursoRequest">
+      <class ref="pe.edu.cibertec.ws.object.PutCursoRequest"/>
+    </bindings>
+    <bindings scd="tns:putCursoResponse">
+      <class ref="pe.edu.cibertec.ws.object.PutCursoResponse"/>
+    </bindings>
+    <bindings scd="tns:getCursosRequest">
+      <class ref="pe.edu.cibertec.ws.object.GetCursosRequest"/>
+    </bindings>
+    <bindings scd="tns:getCursosResponse">
+      <class ref="pe.edu.cibertec.ws.object.GetCursosResponse"/>
+    </bindings>
+    <bindings scd="tns:getCursoRequest">
+      <class ref="pe.edu.cibertec.ws.object.GetCursoRequest"/>
+    </bindings>
+    <bindings scd="tns:getCursoResponse">
+      <class ref="pe.edu.cibertec.ws.object.GetCursoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

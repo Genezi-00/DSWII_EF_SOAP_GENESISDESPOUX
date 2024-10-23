@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 02:09:48 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/object">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.object"/>
+    </schemaBindings>
+    <bindings scd="tns:postDocenteRequest">
+      <class ref="pe.edu.cibertec.ws.object.PostDocenteRequest"/>
+    </bindings>
+    <bindings scd="~tns:docentews">
+      <class ref="pe.edu.cibertec.ws.object.Docentews"/>
+    </bindings>
+    <bindings scd="tns:postDocenteResponse">
+      <class ref="pe.edu.cibertec.ws.object.PostDocenteResponse"/>
+    </bindings>
+    <bindings scd="tns:putDocenteRequest">
+      <class ref="pe.edu.cibertec.ws.object.PutDocenteRequest"/>
+    </bindings>
+    <bindings scd="tns:putDocenteResponse">
+      <class ref="pe.edu.cibertec.ws.object.PutDocenteResponse"/>
+    </bindings>
+    <bindings scd="tns:getDocentesRequest">
+      <class ref="pe.edu.cibertec.ws.object.GetDocentesRequest"/>
+    </bindings>
+    <bindings scd="tns:getDocentesResponse">
+      <class ref="pe.edu.cibertec.ws.object.GetDocentesResponse"/>
+    </bindings>
+    <bindings scd="tns:getDocenteRequest">
+      <class ref="pe.edu.cibertec.ws.object.GetDocenteRequest"/>
+    </bindings>
+    <bindings scd="tns:getDocenteResponse">
+      <class ref="pe.edu.cibertec.ws.object.GetDocenteResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
